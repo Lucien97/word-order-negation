@@ -9,10 +9,10 @@ Update on 19th April:
 
 Update on 20th April:
 
-1. Use stanza to do POS-tagging and dependency parsing on fin-x-bible-newworld.txt to make the source languages more diverse.
+1. Use stanza to do POS-tagging and dependency parsing on fin-x-bible-newworld.txt to make source languages more diverse;
 2. Now I have indexes and (pure) content for word alignment.
 
 To do list:
 
-1. Figure out how to use EFLOMAL to align all the other documents to the languages I've already done pos-tagging and dependency parsing.
+1. Figure out how to use EFLOMAL to align all the other documents to the languages I've already done pos-tagging and dependency parsing;
 2. Start writing something about the method and data chapter of the thesis.
