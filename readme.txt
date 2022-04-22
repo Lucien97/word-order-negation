@@ -14,10 +14,19 @@ Update on 20th April:
 
 Update on 21st April:
 
-1. Now I can get some results from word alignment by writing a command line in terminal.
+1. Now I can get some results from word alignment by writing a command line in terminal;
 2. Tried to automate the alignment pipeline of thousands of files. Now I have a prototype that works for a single file.
+
+Update on 22nd April:
+
+1. Now the prototype if refined further, considering different index cross bible files, though only one language works out from the code with five languages in the same for loop.
 
 To do list:
 
-1. To make the automated alignment pipeline work, also considering the different length of bible files;
-2. Start writing something about the method and data chapter of the thesis. PLEASE!
+1. To make the automated alignment pipeline work for other languages except for German.
+2. Think about the pipeline for the projection.
+3. Start writing.
+
+For Cui:
+
+I've uploaded the python script called "bible_same_length.py" where the for loop is wrong. Please check it yourself.
