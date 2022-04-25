@@ -21,12 +21,16 @@ Update on 22nd April:
 
 1. Now the prototype if refined further, considering different index cross bible files, though only one language works out from the code with five languages in the same for loop.
 
+Update on 26th April:
+
+1. Now a code to align all the code is (almost) done.
+
 To do list:
 
-1. To make the automated alignment pipeline work for other languages except for German.
+1. Wait for the alignment results;
 2. Think about the pipeline for the projection.
 3. Start writing.
 
 For Cui:
 
-I've uploaded the python script called "bible_same_length.py" where the for loop is wrong. Please check it yourself.
+Thanks for everything.
