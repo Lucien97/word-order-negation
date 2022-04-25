@@ -16,7 +16,7 @@ for bible in bible_files:
         save_flag = 0
         for line in lines:
             if save_flag:
-                try:fi
+                try:
                     index, content = line.split('\t')
                     index = ''.join(re.findall(r'\d', index))
                     text_file.write(content)
