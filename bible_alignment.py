@@ -63,7 +63,7 @@ for item in lan_to_file:
                     temp_file.write(tar_file_dic[verse])
         s_file = shutil.move(gen_file_dir, align_tool_path + gen_file_name)
         t_file = shutil.move(temp_file_dir, align_tool_path + temp_file_name)
-        align_result_file = item_alignment_dir + '/' + item + '-' + bible_lan + '.txt'
+        align_result_file = item_alignment_dir + '/' + item + '-' + bible_name + '.txt'
         os.chdir('/Users/chen/Typology/maceflomal')
         os.system('python3 {} --overwrite -m 3 -s {} -t {} -f {}'.format('align.py', s_file, t_file, align_result_file))
         os.remove(s_file)
