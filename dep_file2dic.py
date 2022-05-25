@@ -23,7 +23,7 @@ def dep_line_parsing(string):
     result = []
     split_string = string.split('\t')
     word_id = str(int(split_string[0].split(': ')[1]) - 1)
-    result.append(split_string[2].split(': ')[1])
+    result.append(str(int(split_string[2].split(': ')[1]) - 1))
     result.append(split_string[4].split(': ')[1][:-1])
     return word_id, result
 
