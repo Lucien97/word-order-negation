@@ -26,15 +26,14 @@ def projection(source_pos_dic, source_dep_dic, alignment_dir):
         temp_pos_dic = {}
         if verse_id in source_dep_dic:
             for source_id, target_id in align_pair.items():
-                # print(verse_id)
-                # print(source_id)
-                # print(source_dep_dic[verse_id][source_id][0])
-                if source_dep_dic[verse_id][source_id][0] in align_pair.keys():
-                    temp_dep_dic[target_id] = [align_pair[source_dep_dic[verse_id][source_id][0]], source_dep_dic[verse_id][source_id][1]]
+                head_id = source_dep_dic[verse_id][source_id][0]
+                if head_id in align_pair.keys():
+                    temp_dep_dic[target_id] = [align_pair[head_id], source_dep_dic[verse_id][source_id][1]]
                     temp_pos_dic[target_id] = source_pos_dic[verse_id][source_id]
-                if source_dep_dic[verse_id][source_id][0] == '0':
-                    temp_dep_dic[target_id] = ['0', 'root']
+                    temp_pos_dic[align_pair[head_id]] = source_pos_dic[verse_id][head_id]
+                if head_id == '-1':
+                    temp_dep_dic[target_id] = ['-1', 'root']
                     temp_pos_dic[target_id] = source_pos_dic[verse_id][source_id]
             proj_dep_dic[verse_id] = temp_dep_dic
-            proj_pos_dic[verse_id] = temp_dep_dic
+            proj_pos_dic[verse_id] = temp_pos_dic
     return proj_pos_dic, proj_dep_dic
