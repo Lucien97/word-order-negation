@@ -1,7 +1,9 @@
-Update on 20th May:
-1. Now I am running the alignment (also with the intersection) on my computer (tired with UPPMAX)
-2. The .py file to project pos tags and dependencies from source language to target language is uploaded. (Sometimes there are reoccurring sentences because Stanza sometimes mistokenize the verses. This problem is solved now.)
+Update on 30th May:
+
+Finished:
+1. Alignment files for five sourve languages.
+2. Projection and convert the position list to sentence pattern(VSO/SVO/OVS...) 
 
 To do:
-1. Wait for the results for fra.
-2. Continue the work with verb and negative-polarity detection.
+1. Data collention.
+2. WRITE SOMETHING!
